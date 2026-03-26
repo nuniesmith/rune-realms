@@ -1,0 +1,266 @@
+{
+  "_comment": "Master item catalog for Rune Realms. All items that can drop from enemies or appear in inventory.",
+  "items": [
+    {
+      "itemId": "goblin_bones",
+      "name": "Goblin Bones",
+      "category": "material",
+      "rarity": "common",
+      "description": "Brittle bones from a defeated goblin. Useful for prayer training.",
+      "stackable": true,
+      "maxStack": 999
+    },
+    {
+      "itemId": "bronze_dagger",
+      "name": "Bronze Dagger",
+      "category": "weapon",
+      "rarity": "common",
+      "description": "A small dagger made of bronze. Not very sharp, but better than nothing.",
+      "stackable": false,
+      "maxStack": 1
+    },
+    {
+      "itemId": "feather",
+      "name": "Feather",
+      "category": "material",
+      "rarity": "common",
+      "description": "A soft feather. Used in fletching and fly fishing.",
+      "stackable": true,
+      "maxStack": 9999
+    },
+    {
+      "itemId": "raw_chicken",
+      "name": "Raw Chicken",
+      "category": "material",
+      "rarity": "common",
+      "description": "A raw piece of chicken meat. Cook it before eating.",
+      "stackable": true,
+      "maxStack": 999
+    },
+    {
+      "itemId": "egg",
+      "name": "Egg",
+      "category": "material",
+      "rarity": "uncommon",
+      "description": "A freshly laid egg. Surprisingly intact after the battle.",
+      "stackable": true,
+      "maxStack": 999
+    },
+    {
+      "itemId": "bones",
+      "name": "Bones",
+      "category": "material",
+      "rarity": "common",
+      "description": "A pile of bones. Can be buried for prayer experience.",
+      "stackable": true,
+      "maxStack": 999
+    },
+    {
+      "itemId": "iron_sword",
+      "name": "Iron Sword",
+      "category": "weapon",
+      "rarity": "uncommon",
+      "description": "A sturdy sword forged from iron. A reliable weapon for any adventurer.",
+      "stackable": false,
+      "maxStack": 1
+    },
+    {
+      "itemId": "shield_half",
+      "name": "Shield Half",
+      "category": "material",
+      "rarity": "rare",
+      "description": "Half of an ancient shield. Find the other half to forge a legendary defense.",
+      "stackable": false,
+      "maxStack": 1
+    },
+    {
+      "itemId": "air_rune",
+      "name": "Air Rune",
+      "category": "material",
+      "rarity": "common",
+      "description": "A rune imbued with the power of air. Used to cast wind spells.",
+      "stackable": true,
+      "maxStack": 9999
+    },
+    {
+      "itemId": "wizard_hat",
+      "name": "Wizard Hat",
+      "category": "armor",
+      "rarity": "uncommon",
+      "description": "A pointy hat favored by practitioners of the arcane arts.",
+      "stackable": false,
+      "maxStack": 1
+    },
+    {
+      "itemId": "staff_of_fire",
+      "name": "Staff of Fire",
+      "category": "weapon",
+      "rarity": "rare",
+      "description": "A magical staff crackling with flame. Provides unlimited fire runes.",
+      "stackable": false,
+      "maxStack": 1
+    },
+    {
+      "itemId": "spider_silk",
+      "name": "Spider Silk",
+      "category": "material",
+      "rarity": "common",
+      "description": "Strong, sticky silk harvested from a giant spider. Used in crafting.",
+      "stackable": true,
+      "maxStack": 999
+    },
+    {
+      "itemId": "venom_sac",
+      "name": "Venom Sac",
+      "category": "material",
+      "rarity": "uncommon",
+      "description": "A sac of potent spider venom. Handle with extreme care.",
+      "stackable": true,
+      "maxStack": 999
+    },
+    {
+      "itemId": "big_bones",
+      "name": "Big Bones",
+      "category": "material",
+      "rarity": "common",
+      "description": "Oversized bones from a hill giant. Worth more prayer XP than regular bones.",
+      "stackable": true,
+      "maxStack": 999
+    },
+    {
+      "itemId": "giant_key",
+      "name": "Giant Key",
+      "category": "tool",
+      "rarity": "rare",
+      "description": "A massive brass key. Rumored to unlock a chest deep within Obor's lair.",
+      "stackable": false,
+      "maxStack": 1
+    },
+    {
+      "itemId": "rune_helm",
+      "name": "Rune Helm",
+      "category": "armor",
+      "rarity": "rare",
+      "description": "A full helm forged from runite. Offers excellent protection.",
+      "stackable": false,
+      "maxStack": 1
+    },
+    {
+      "itemId": "limpwurt_root",
+      "name": "Limpwurt Root",
+      "category": "material",
+      "rarity": "uncommon",
+      "description": "A gnarly root used in herblore to brew strength potions.",
+      "stackable": true,
+      "maxStack": 999
+    },
+    {
+      "itemId": "black_platebody",
+      "name": "Black Platebody",
+      "category": "armor",
+      "rarity": "uncommon",
+      "description": "Dark plate armor worn by the knights of the Black Order.",
+      "stackable": false,
+      "maxStack": 1
+    },
+    {
+      "itemId": "black_sword",
+      "name": "Black Sword",
+      "category": "weapon",
+      "rarity": "uncommon",
+      "description": "A jet-black longsword. Its edge never seems to dull.",
+      "stackable": false,
+      "maxStack": 1
+    },
+    {
+      "itemId": "knights_shield",
+      "name": "Knight's Shield",
+      "category": "armor",
+      "rarity": "rare",
+      "description": "A kite shield bearing the crest of a fallen knight order.",
+      "stackable": false,
+      "maxStack": 1
+    },
+    {
+      "itemId": "dragon_bones",
+      "name": "Dragon Bones",
+      "category": "material",
+      "rarity": "uncommon",
+      "description": "Ancient bones from a slain dragon. Extremely valuable for prayer training.",
+      "stackable": true,
+      "maxStack": 999
+    },
+    {
+      "itemId": "dragon_hide",
+      "name": "Dragon Hide",
+      "category": "material",
+      "rarity": "uncommon",
+      "description": "Tough, scaly hide from a dragon. Can be crafted into powerful armor.",
+      "stackable": true,
+      "maxStack": 999
+    },
+    {
+      "itemId": "dragon_scimitar",
+      "name": "Dragon Scimitar",
+      "category": "weapon",
+      "rarity": "rare",
+      "description": "A curved blade of dragonfire-tempered metal. The weapon of champions.",
+      "stackable": false,
+      "maxStack": 1
+    },
+    {
+      "itemId": "dragon_visage",
+      "name": "Dragon Visage",
+      "category": "material",
+      "rarity": "legendary",
+      "description": "An extremely rare dragon face plate. Can be attached to an anti-dragon shield.",
+      "stackable": false,
+      "maxStack": 1
+    },
+    {
+      "itemId": "dragonfire_shield",
+      "name": "Dragonfire Shield",
+      "category": "armor",
+      "rarity": "legendary",
+      "description": "A legendary shield that absorbs dragonfire. One of the rarest items in the realm.",
+      "stackable": false,
+      "maxStack": 1
+    },
+    {
+      "itemId": "health_potion",
+      "name": "Health Potion",
+      "category": "consumable",
+      "rarity": "common",
+      "description": "A vial of red liquid that restores 25 HP when consumed.",
+      "stackable": true,
+      "maxStack": 99
+    },
+    {
+      "itemId": "super_health_potion",
+      "name": "Super Health Potion",
+      "category": "consumable",
+      "rarity": "uncommon",
+      "description": "A potent healing brew that restores 50 HP when consumed.",
+      "stackable": true,
+      "maxStack": 99
+    },
+    {
+      "itemId": "strength_potion",
+      "name": "Strength Potion",
+      "category": "consumable",
+      "rarity": "uncommon",
+      "description": "A bubbling potion that boosts damage by 20% for 30 seconds.",
+      "stackable": true,
+      "maxStack": 99
+    },
+    {
+      "itemId": "xp_lamp",
+      "name": "XP Lamp",
+      "category": "consumable",
+      "rarity": "rare",
+      "description": "A magical lamp that grants 100 XP to a skill of your choosing when rubbed.",
+      "stackable": true,
+      "maxStack": 99
+    }
+  ]
+}

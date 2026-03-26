@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="splash.css" />
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width, height=device-height, user-scalable=0"
+    />
+    <title>Rune Realms</title>
+  </head>
+  <body class="app">
+    <div class="content">
+      <h1 class="title" id="title">Rune Realms</h1>
+      <p class="description" id="description">
+        Skill. Fight. Conquer. An OSRS-inspired idle RPG on Reddit.
+      </p>
+    </div>
+    <div class="stats-container" id="stats-container" style="display: none">
+      <div class="stat-row">
+        <span class="stat-label">Total Level</span>
+        <span class="stat-value" id="stat-total-level">—</span>
+      </div>
+      <div class="stat-row">
+        <span class="stat-label">Arena Kills</span>
+        <span class="stat-value" id="stat-arena-kills">—</span>
+      </div>
+      <div class="stat-row">
+        <span class="stat-label">Items</span>
+        <span class="stat-value" id="stat-items">—</span>
+      </div>
+    </div>
+    <div>
+      <button class="start-button" id="start-button">Enter the Realm</button>
+    </div>
+    <footer class="footer">
+      <div class="docs-link" tabindex="0" id="docs-link">Docs</div>
+      <span class="divider">|</span>
+      <div class="docs-link" tabindex="0" id="playtest-link">r/Devvit</div>
+      <span class="divider">|</span>
+      <div class="docs-link" tabindex="0" id="discord-link">Discord</div>
+    </footer>
+    <script type="module" src="splash.ts" defer></script>
+  </body>
+</html>

@@ -25,4 +25,3 @@ The full Unity project for this project can be found [here](https://github.com/r
 - `npm run launch`: Publishes your app for review
 - `npm run login`: Logs your CLI into Reddit
 - `npm run type-check`: Type checks, lints, and prettifies your app
-# arena-realms

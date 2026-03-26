@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Rune Realms</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico" />
+    <link rel="stylesheet" href="TemplateData/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-color: #1a1410;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+      #unity-canvas {
+        background: #1a1410 !important;
+      }
+      #unity-loading-bar {
+        text-align: center;
+      }
+      #unity-logo {
+        background: none !important;
+        width: auto !important;
+        height: auto !important;
+        font-family: 'Cinzel', serif;
+        font-size: 2em;
+        font-weight: 700;
+        color: #d4a438;
+        text-align: center;
+        margin-bottom: 12px;
+      }
+      #unity-progress-bar-empty {
+        width: 260px !important;
+        height: 12px !important;
+        margin: 10px auto 0 auto !important;
+        background: #2a2218 !important;
+        border: 2px solid #5c4a2a !important;
+        border-radius: 6px !important;
+        overflow: hidden;
+      }
+      #unity-progress-bar-full {
+        height: 12px !important;
+        margin-top: 0 !important;
+        background: linear-gradient(
+          90deg,
+          #b8862d,
+          #d4a438,
+          #f0c850
+        ) !important;
+        border-radius: 4px !important;
+        transition: width 0.3s ease;
+      }
+      #loading-tip {
+        font-family: 'Cinzel', serif;
+        font-size: 0.85em;
+        color: #b8a88a;
+        text-align: center;
+        margin-top: 16px;
+        min-height: 1.2em;
+      }
+      #unity-warning {
+        background: #2a1a0a !important;
+        color: #ffcc00 !important;
+        border: 1px solid #d4a438 !important;
+        border-radius: 4px !important;
+        font-family: sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="unity-container" class="unity-desktop">
+      <canvas id="unity-canvas" width="960" height="600" tabindex="-1"></canvas>
+      <div id="unity-loading-bar">
+        <div id="unity-logo">Rune Realms</div>
+        <div id="unity-progress-bar-empty">
+          <div id="unity-progress-bar-full"></div>
+        </div>
+        <div id="loading-tip"></div>
+      </div>
+      <div id="unity-warning"></div>
+    </div>
+    <script type="module" src="script.ts"></script>
+  </body>
+</html>

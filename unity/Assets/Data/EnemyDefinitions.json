@@ -1,0 +1,309 @@
+{
+  "_comment": "Enemy definitions reference for Rune Realms. Use this as a guide when creating EnemyData ScriptableObjects in the Unity Editor.",
+  "enemies": [
+    {
+      "enemyName": "Goblin",
+      "description": "A sneaky little green menace. Common in the early waves, but don't underestimate their numbers.",
+      "difficulty": "Easy",
+      "minWave": 1,
+      "maxHp": 30,
+      "damage": 5,
+      "attackInterval": 2.0,
+      "xpReward": 15,
+      "specialAbility": null,
+      "lootTable": [
+        {
+          "itemId": "goblin_bones",
+          "itemName": "Goblin Bones",
+          "rarity": "common",
+          "dropChance": 0.80,
+          "minQuantity": 1,
+          "maxQuantity": 2
+        },
+        {
+          "itemId": "bronze_dagger",
+          "itemName": "Bronze Dagger",
+          "rarity": "common",
+          "dropChance": 0.15,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        }
+      ]
+    },
+    {
+      "enemyName": "Chicken",
+      "description": "A seemingly harmless farmyard fowl. Deceptively aggressive when cornered.",
+      "difficulty": "Easy",
+      "minWave": 1,
+      "maxHp": 15,
+      "damage": 2,
+      "attackInterval": 2.5,
+      "xpReward": 5,
+      "specialAbility": null,
+      "lootTable": [
+        {
+          "itemId": "feather",
+          "itemName": "Feather",
+          "rarity": "common",
+          "dropChance": 1.00,
+          "minQuantity": 1,
+          "maxQuantity": 5
+        },
+        {
+          "itemId": "raw_chicken",
+          "itemName": "Raw Chicken",
+          "rarity": "common",
+          "dropChance": 0.80,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        },
+        {
+          "itemId": "egg",
+          "itemName": "Egg",
+          "rarity": "uncommon",
+          "dropChance": 0.10,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        }
+      ]
+    },
+    {
+      "enemyName": "Skeleton",
+      "description": "The reanimated bones of a fallen warrior. Still remembers how to swing a sword.",
+      "difficulty": "Medium",
+      "minWave": 3,
+      "maxHp": 50,
+      "damage": 8,
+      "attackInterval": 1.8,
+      "xpReward": 30,
+      "specialAbility": null,
+      "lootTable": [
+        {
+          "itemId": "bones",
+          "itemName": "Bones",
+          "rarity": "common",
+          "dropChance": 0.90,
+          "minQuantity": 1,
+          "maxQuantity": 3
+        },
+        {
+          "itemId": "iron_sword",
+          "itemName": "Iron Sword",
+          "rarity": "uncommon",
+          "dropChance": 0.20,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        },
+        {
+          "itemId": "shield_half",
+          "itemName": "Shield Half",
+          "rarity": "rare",
+          "dropChance": 0.05,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        }
+      ]
+    },
+    {
+      "enemyName": "Dark Wizard",
+      "description": "A corrupted mage who draws power from forbidden runes. Hits hard but is fragile.",
+      "difficulty": "Medium",
+      "minWave": 3,
+      "maxHp": 40,
+      "damage": 12,
+      "attackInterval": 2.5,
+      "xpReward": 35,
+      "specialAbility": "Casts firebolt every 3rd attack, dealing double damage.",
+      "lootTable": [
+        {
+          "itemId": "air_rune",
+          "itemName": "Air Rune",
+          "rarity": "common",
+          "dropChance": 0.70,
+          "minQuantity": 5,
+          "maxQuantity": 15
+        },
+        {
+          "itemId": "wizard_hat",
+          "itemName": "Wizard Hat",
+          "rarity": "uncommon",
+          "dropChance": 0.15,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        },
+        {
+          "itemId": "staff_of_fire",
+          "itemName": "Staff of Fire",
+          "rarity": "rare",
+          "dropChance": 0.03,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        }
+      ]
+    },
+    {
+      "enemyName": "Giant Spider",
+      "description": "A venomous arachnid the size of a wolf. Its rapid strikes make it dangerous up close.",
+      "difficulty": "Medium",
+      "minWave": 3,
+      "maxHp": 45,
+      "damage": 7,
+      "attackInterval": 1.5,
+      "xpReward": 25,
+      "specialAbility": "Fast attack speed. Venom has a 15% chance to apply poison (2 damage per tick for 3 ticks).",
+      "lootTable": [
+        {
+          "itemId": "spider_silk",
+          "itemName": "Spider Silk",
+          "rarity": "common",
+          "dropChance": 0.75,
+          "minQuantity": 1,
+          "maxQuantity": 3
+        },
+        {
+          "itemId": "venom_sac",
+          "itemName": "Venom Sac",
+          "rarity": "uncommon",
+          "dropChance": 0.20,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        }
+      ]
+    },
+    {
+      "enemyName": "Hill Giant",
+      "description": "A towering brute with a massive club. Slow but devastatingly powerful.",
+      "difficulty": "Hard",
+      "minWave": 5,
+      "maxHp": 80,
+      "damage": 10,
+      "attackInterval": 2.2,
+      "xpReward": 50,
+      "specialAbility": "Ground slam every 4th attack hits through defense.",
+      "lootTable": [
+        {
+          "itemId": "big_bones",
+          "itemName": "Big Bones",
+          "rarity": "common",
+          "dropChance": 1.00,
+          "minQuantity": 1,
+          "maxQuantity": 2
+        },
+        {
+          "itemId": "giant_key",
+          "itemName": "Giant Key",
+          "rarity": "rare",
+          "dropChance": 0.08,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        },
+        {
+          "itemId": "rune_helm",
+          "itemName": "Rune Helm",
+          "rarity": "rare",
+          "dropChance": 0.05,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        },
+        {
+          "itemId": "limpwurt_root",
+          "itemName": "Limpwurt Root",
+          "rarity": "uncommon",
+          "dropChance": 0.30,
+          "minQuantity": 1,
+          "maxQuantity": 2
+        }
+      ]
+    },
+    {
+      "enemyName": "Black Knight",
+      "description": "An elite warrior clad in dark armor. Disciplined, relentless, and heavily armored.",
+      "difficulty": "Hard",
+      "minWave": 5,
+      "maxHp": 100,
+      "damage": 14,
+      "attackInterval": 1.6,
+      "xpReward": 65,
+      "specialAbility": "Shield bash every 5th attack stuns the player for 1 second.",
+      "lootTable": [
+        {
+          "itemId": "black_platebody",
+          "itemName": "Black Platebody",
+          "rarity": "uncommon",
+          "dropChance": 0.25,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        },
+        {
+          "itemId": "black_sword",
+          "itemName": "Black Sword",
+          "rarity": "uncommon",
+          "dropChance": 0.20,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        },
+        {
+          "itemId": "knights_shield",
+          "itemName": "Knight's Shield",
+          "rarity": "rare",
+          "dropChance": 0.08,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        }
+      ]
+    },
+    {
+      "enemyName": "Dragon",
+      "description": "An ancient wyrm of terrifying power. Only the bravest adventurers dare challenge it.",
+      "difficulty": "Boss",
+      "minWave": 8,
+      "maxHp": 200,
+      "damage": 20,
+      "attackInterval": 2.8,
+      "xpReward": 150,
+      "specialAbility": "Dragonfire breath every 3rd attack deals area damage and ignores 50% of defense.",
+      "lootTable": [
+        {
+          "itemId": "dragon_bones",
+          "itemName": "Dragon Bones",
+          "rarity": "uncommon",
+          "dropChance": 1.00,
+          "minQuantity": 1,
+          "maxQuantity": 3
+        },
+        {
+          "itemId": "dragon_hide",
+          "itemName": "Dragon Hide",
+          "rarity": "uncommon",
+          "dropChance": 0.60,
+          "minQuantity": 1,
+          "maxQuantity": 2
+        },
+        {
+          "itemId": "dragon_scimitar",
+          "itemName": "Dragon Scimitar",
+          "rarity": "rare",
+          "dropChance": 0.10,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        },
+        {
+          "itemId": "dragon_visage",
+          "itemName": "Dragon Visage",
+          "rarity": "legendary",
+          "dropChance": 0.01,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        },
+        {
+          "itemId": "dragonfire_shield",
+          "itemName": "Dragonfire Shield",
+          "rarity": "legendary",
+          "dropChance": 0.005,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        }
+      ]
+    }
+  ]
+}
