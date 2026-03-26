@@ -26,7 +26,7 @@ export const createDefaultInventory = (): PlayerInventory => ({
 
 export const createDefaultProfile = (username: string): PlayerProfile => ({
   username,
-  totalLevel: 5, // 5 skills × level 1
+  totalLevel: 8, // 8 skills × level 1
   totalXp: 0,
   arenaKills: 0,
   joinedTimestamp: Date.now(),

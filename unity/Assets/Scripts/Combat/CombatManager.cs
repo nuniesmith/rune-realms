@@ -47,7 +47,7 @@ namespace RuneRealms.Combat
         [SerializeField] private Button startBattleButton;
 
         // Combat-relevant skill names used for XP reward distribution
-        private static readonly string[] CombatSkills = { "mining", "smithing", "woodcutting" };
+        private static readonly string[] CombatSkills = { "mining", "smithing", "woodcutting", "attack", "strength", "defence" };
 
         // Combat state
         private int playerMaxHp;
@@ -112,6 +112,7 @@ namespace RuneRealms.Combat
         {
             // Base stats
             int miningLevel = 1, fishingLevel = 1, cookingLevel = 1, smithingLevel = 1, woodcuttingLevel = 1;
+            int attackLevel = 1, strengthLevel = 1, defenceLevel = 1;
 
             foreach (var skill in skills.skills)
             {
@@ -122,15 +123,18 @@ namespace RuneRealms.Combat
                     case "cooking": cookingLevel = skill.level; break;
                     case "smithing": smithingLevel = skill.level; break;
                     case "woodcutting": woodcuttingLevel = skill.level; break;
+                    case "attack": attackLevel = skill.level; break;
+                    case "strength": strengthLevel = skill.level; break;
+                    case "defence": defenceLevel = skill.level; break;
                 }
             }
 
             // Skill → Combat stat mapping
-            playerDamage = 10 + (miningLevel * 2);           // Mining → +damage
-            playerMaxHp = 50 + (fishingLevel * 10);           // Fishing → +max HP
-            healAmount = 10 + (cookingLevel * 3);             // Cooking → +healing
-            playerDefense = miningLevel + (smithingLevel * 2); // Smithing → +defense (renamed from mining influence)
-            playerSpecialDamage = 20 + (woodcuttingLevel * 3); // Woodcutting → +special damage
+            playerDamage = 10 + (miningLevel * 2) + (attackLevel * 3);           // Mining + Attack → +damage
+            playerMaxHp = 50 + (fishingLevel * 10);                               // Fishing → +max HP
+            healAmount = 10 + (cookingLevel * 3);                                 // Cooking → +healing
+            playerDefense = miningLevel + (smithingLevel * 2) + (defenceLevel * 2); // Smithing + Defence → +defense
+            playerSpecialDamage = 20 + (woodcuttingLevel * 3) + (strengthLevel * 4); // Woodcutting + Strength → +special/crit damage
 
             playerCurrentHp = playerMaxHp;
         }

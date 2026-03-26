@@ -152,6 +152,9 @@ describe('applyOfflineXp', () => {
       { name: 'mining', xp: 0, level: 1 },
       { name: 'cooking', xp: 0, level: 1 },
       { name: 'smithing', xp: 0, level: 1 },
+      { name: 'attack', xp: 0, level: 1 },
+      { name: 'strength', xp: 0, level: 1 },
+      { name: 'defence', xp: 0, level: 1 },
     ],
     lastSaveTimestamp: Date.now() - 10 * 60 * 1000, // 10 minutes ago
     activeSkill: 'woodcutting',
@@ -183,7 +186,9 @@ describe('applyOfflineXp', () => {
     const { updatedSkills } = applyOfflineXp(skills, now);
 
     const fishing = updatedSkills.skills.find((s) => s.name === 'fishing');
-    const woodcutting = updatedSkills.skills.find((s) => s.name === 'woodcutting');
+    const woodcutting = updatedSkills.skills.find(
+      (s) => s.name === 'woodcutting'
+    );
     expect(fishing?.xp).toBe(0);
     expect(woodcutting?.xp).toBe(0);
   });
@@ -212,6 +217,9 @@ describe('applyOfflineXp', () => {
         { name: 'mining', xp: 0, level: 1 },
         { name: 'cooking', xp: 0, level: 1 },
         { name: 'smithing', xp: 0, level: 1 },
+        { name: 'attack', xp: 0, level: 1 },
+        { name: 'strength', xp: 0, level: 1 },
+        { name: 'defence', xp: 0, level: 1 },
       ],
       lastSaveTimestamp: now - 10 * 60 * 1000,
       activeSkill: 'woodcutting',
@@ -262,15 +270,18 @@ describe('calculateTotalLevel', () => {
         { name: 'mining', xp: 0, level: 1 },
         { name: 'cooking', xp: 100, level: 2 },
         { name: 'smithing', xp: 0, level: 1 },
+        { name: 'attack', xp: 0, level: 1 },
+        { name: 'strength', xp: 0, level: 1 },
+        { name: 'defence', xp: 0, level: 1 },
       ],
       lastSaveTimestamp: Date.now(),
       activeSkill: null,
     };
 
-    expect(calculateTotalLevel(skills)).toBe(13); // 3 + 6 + 1 + 2 + 1
+    expect(calculateTotalLevel(skills)).toBe(16); // 3 + 6 + 1 + 2 + 1 + 1 + 1 + 1
   });
 
-  it('returns 5 for all level 1 skills', () => {
+  it('returns 8 for all level 1 skills', () => {
     const skills: PlayerSkills = {
       skills: [
         { name: 'woodcutting', xp: 0, level: 1 },
@@ -278,12 +289,15 @@ describe('calculateTotalLevel', () => {
         { name: 'mining', xp: 0, level: 1 },
         { name: 'cooking', xp: 0, level: 1 },
         { name: 'smithing', xp: 0, level: 1 },
+        { name: 'attack', xp: 0, level: 1 },
+        { name: 'strength', xp: 0, level: 1 },
+        { name: 'defence', xp: 0, level: 1 },
       ],
       lastSaveTimestamp: Date.now(),
       activeSkill: null,
     };
 
-    expect(calculateTotalLevel(skills)).toBe(5);
+    expect(calculateTotalLevel(skills)).toBe(8);
   });
 });
 
@@ -296,12 +310,15 @@ describe('calculateTotalXp', () => {
         { name: 'mining', xp: 0, level: 1 },
         { name: 'cooking', xp: 100, level: 2 },
         { name: 'smithing', xp: 50, level: 1 },
+        { name: 'attack', xp: 0, level: 1 },
+        { name: 'strength', xp: 0, level: 1 },
+        { name: 'defence', xp: 0, level: 1 },
       ],
       lastSaveTimestamp: Date.now(),
       activeSkill: null,
     };
 
-    expect(calculateTotalXp(skills)).toBe(850); // 200 + 500 + 0 + 100 + 50
+    expect(calculateTotalXp(skills)).toBe(850); // 200 + 500 + 0 + 100 + 50 + 0 + 0 + 0
   });
 
   it('returns 0 for all fresh skills', () => {
@@ -312,6 +329,9 @@ describe('calculateTotalXp', () => {
         { name: 'mining', xp: 0, level: 1 },
         { name: 'cooking', xp: 0, level: 1 },
         { name: 'smithing', xp: 0, level: 1 },
+        { name: 'attack', xp: 0, level: 1 },
+        { name: 'strength', xp: 0, level: 1 },
+        { name: 'defence', xp: 0, level: 1 },
       ],
       lastSaveTimestamp: Date.now(),
       activeSkill: null,

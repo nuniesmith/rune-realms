@@ -7,9 +7,9 @@ import {
 } from './defaults';
 
 describe('createDefaultSkills', () => {
-  it('returns exactly 5 skills', () => {
+  it('returns exactly 8 skills', () => {
     const result = createDefaultSkills();
-    expect(result.skills).toHaveLength(5);
+    expect(result.skills).toHaveLength(8);
   });
 
   it('all skills start at level 1 with 0 XP', () => {
@@ -29,6 +29,9 @@ describe('createDefaultSkills', () => {
       'mining',
       'cooking',
       'smithing',
+      'attack',
+      'strength',
+      'defence',
     ]);
   });
 
@@ -66,9 +69,9 @@ describe('createDefaultProfile', () => {
     expect(result.username).toBe('testPlayer');
   });
 
-  it('has totalLevel 5 (5 skills × level 1)', () => {
+  it('has totalLevel 8 (8 skills × level 1)', () => {
     const result = createDefaultProfile('someone');
-    expect(result.totalLevel).toBe(5);
+    expect(result.totalLevel).toBe(8);
   });
 
   it('has 0 totalXp and 0 arenaKills', () => {

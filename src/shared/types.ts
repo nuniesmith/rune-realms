@@ -4,7 +4,10 @@ export type SkillName =
   | 'fishing'
   | 'mining'
   | 'cooking'
-  | 'smithing';
+  | 'smithing'
+  | 'attack'
+  | 'strength'
+  | 'defence';
 
 export const ALL_SKILLS: SkillName[] = [
   'woodcutting',
@@ -12,6 +15,9 @@ export const ALL_SKILLS: SkillName[] = [
   'mining',
   'cooking',
   'smithing',
+  'attack',
+  'strength',
+  'defence',
 ];
 
 export type SkillData = {

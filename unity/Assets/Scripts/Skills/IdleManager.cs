@@ -19,7 +19,7 @@ namespace RuneRealms.Skills
 
         [Header("Settings")]
         [SerializeField] private float tickInterval = 1f;
-        [SerializeField] private int[] xpPerTick = { 10, 12, 8, 9, 11 }; // wc, fish, mine, cook, smith
+        [SerializeField] private int[] xpPerTick = { 10, 12, 8, 9, 11, 7, 8, 6 }; // wc, fish, mine, cook, smith, atk, str, def
 
         private PlayerSkills playerSkills;
         private int activeSkillIndex = -1;
